@@ -1,0 +1,93 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $regularWeight;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+header {
+
+    padding: 1rem $gutter;
+
+    h1 {
+        margin: 0; 
+        font-size: 0;
+        font-weight: $semiBold;
+        
+        
+    } //end of h1
+    h2{
+        margin: 0; 
+        font-size: 0; 
+        font-weight: $regularWeight;
+    } //end of h2
+
+} //end of header
+
+div#navWrapper{background-color: #111;}
+nav {
+    ul{margin:0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {background-color: #333}
+    a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    }
+    a:hover {background-color: #444;}
+} //end nav
+
+main{display: block; padding: 0 $gutter 1rem $gutter;
+    h1 {color: #111;
+    font-weight: $semiBold;
+    margin-top: 0;}
+
+    figure.hero{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    figure.hero img{
+        width: 100%;
+    }
+
+    figure img.img{
+        width: 100%;
+    }
+
+    
+} //end main
+
+
+
+div#footerWrapper{
+    background-color: #111;
+}
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem $gutter;
+    color: white;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

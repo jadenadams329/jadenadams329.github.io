@@ -1,0 +1,39 @@
+
+   header {
+
+    padding: 1rem $gutter;
+
+    h1 {
+        margin: 0; 
+        font-size: 1.5rem;
+        font-weight: $semiBold;
+        
+    } //end of h1
+    h2{
+        margin: 0; 
+        font-size: 1.2rem; 
+        font-weight: $regularWeight;
+    } //end of h2
+
+} //end of header
+   .logo{
+       display: inline-block;
+   }
+   div#headerWrapper{
+       display: inline-block;
+   }
+    
+    nav li {width: 25%; float: left;}
+    main figure{
+        float: right;
+        width: 48%;
+        margin-left: 2%;
+    }
+    div.news{
+        clear: both;
+        column-count: 2;
+        column-rule: 1px solid #ddd;
+    }
+    
+    
+    
