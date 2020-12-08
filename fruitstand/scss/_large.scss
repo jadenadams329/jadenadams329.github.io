@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 71.25rem;
         margin:auto;
 }
 
@@ -16,7 +16,9 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
-
+div.gallery figure{
+        flex-basis: 21%;
+    }
 
 
 /*----------- FOOTER --------------*/
