@@ -1,0 +1,34 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div.headerWrapper{
+        background-image: url(../images/headerRepeat.png);
+}
+header{
+        background-image: url(../images/headerLarge.jpg);
+        color: white;
+        background-repeat: no-repeat;
+    }
+
+
+/*----------- NAVIGATION --------------*/
+div.navWrapper{
+        background-color: #666;
+}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    div.footerWrapper{
+            background-color: #666;
+    }

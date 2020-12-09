@@ -6,7 +6,11 @@
 
 
 /*----------- HEADER --------------*/
-
+header{
+    background-image: url(../images/mediumheader.jpg);
+    color: white;
+    background-repeat: no-repeat;
+}
 
 
 /*----------- NAVIGATION --------------*/
@@ -18,18 +22,12 @@
 
 
 /*----------- MAIN --------------*/
-div.bodyContainer{
-
-}
-div.bodyContainer p{
-
-}
 figure.fishing{
     float: right;
     width: 48%;
     margin-left: 2%;
-
 }
+
 
 /*----------- FOOTER --------------*/
     
