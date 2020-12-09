@@ -59,8 +59,35 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 0 0% 2% 0%;
     min-height: 10rem;
+}
+
+main figure.myphoto{
+    width: 100%;
+    margin: 0;
+}
+
+main figure.myphoto img{
+    width: 100%;
+}
+main figcaption{
+    text-align: center;
+    font-size: .8rem;
+}
+main figure.myres{
+    margin: 0;
+    width: 100%;
+}
+main figure.myres img{
+    width: 100%;
+}
+
+main h2{
+    padding: 0 2%;
+}
+main p{
+    padding: 0 2%;
 }
 
 
