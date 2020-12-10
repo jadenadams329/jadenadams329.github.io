@@ -1,0 +1,199 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+.headerWrapper{
+    background-color: rgb(255, 0, 0);
+    border-top: black 5px solid;
+}
+header {
+    padding: .5rem 0 0 2%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+header div.search{
+    display: block;
+    float: right;
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: black;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- COLUMNS--------------*/
+div.flexed{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.flexedStyle{
+    margin: 2rem 0;
+}
+.column{padding: 0 $gutter;}
+
+@for $i from 1 through 12{
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+
+.jumbotron{
+    background-color: $accent;
+    color: white;
+    p{font-size: 200%; padding: 2rem 0;}
+
+}
+
+.social{
+    text-align: center;
+    font-size: 2rem;
+    a{color: white; padding: 1rem 0;}
+    a:hover{color: $primaryColor;}
+}
+
+/*----------- MAIN --------------*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .card h3{
+      padding-top: 2%;
+  }
+  
+  .card button {
+    border: none;
+    border-radius: 25px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 85%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .button{
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .button:hover {
+    opacity: 0.7;
+  }
+  .blog {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 16px 0;
+    text-align: left;
+  }
+  .blog h3{
+      padding: 0 4%;
+      margin: 0;
+  }
+  .blog p.post{
+      padding: 0 4%;
+      margin: 8px 0;
+  }
+  
+  
+  .blog button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .tip{
+      background: black;
+      height: 95%;
+      color: white;
+  }
+  .tip h2{
+      padding: 2%;
+  }
+  .tip p{
+    padding: 0 2%;
+
+}
+
+  
+
+
+
+/*----------- FOOTER --------------*/
+.footerWrapper{
+    background-color: red;
+}
+footer {
+    background-color: red;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
