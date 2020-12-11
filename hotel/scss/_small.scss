@@ -1,0 +1,105 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+  nav {
+    background-color: darkblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    flex-basis: 33.3%;
+}
+nav ul li a {
+    display: block;
+    width: 100%;
+    background-color: darkblue;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: rgba(0, 0, 139, 0.178);
+    color: #fff;
+}
+ion-icon {
+    font-size: 32px;
+  }
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+div#myCards{
+    figure{
+        margin: 0;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        figcaption{
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, .5);
+            width: 100%;
+            padding: .5rem 2vw;
+        }
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
