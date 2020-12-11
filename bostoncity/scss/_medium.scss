@@ -1,0 +1,30 @@
+@for $i from 1 through 12{
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+    nav button{
+        display: none;
+    }
+    nav ul{
+        margin-left: 2%;
+    }
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        border:none;
+        border-right: 1px solid white;
+        padding: .8rem 1rem
+    }
+    div.cards div{
+        flex-basis: 48%;
+        margin: 1% 1%;
+    }
+
+    
+
+

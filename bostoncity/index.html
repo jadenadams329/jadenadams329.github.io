@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Boston City: Visit</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <h1>Boston City
+        </h1>
+        <h2>Where History Comes Alive</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Visit</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pay Bills</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <div class="my_slider">
+            <div>
+                <img src="images/boston1.jpg" alt="slider" class="slider"/>
+            </div>
+            <div>
+                <img src="images/boston2.jpg" alt="slider" class="slider"/>
+            </div>
+            <div>
+                <img src="images/boston3.jpg" alt="slider" class="slider"/>
+            </div>
+            <div>
+                <img src="images/boston4.jpg" alt="slider" class="slider"/>
+            </div>
+            <div>
+                <img src="images/boston5.jpg" alt="slider" class="slider"/>
+            </div>
+        </div>
+        <h1>Plan Your Visit</h1>
+            
+        <div class="cards">
+            <div>
+                <a href="">
+                    <img src="images/rest.png" alt=""/>
+                    <h3>
+                        PLACES TO STAY
+                    </h3>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="images/walk.png" alt=""/>
+                    <h3>
+                        WALK THE RED LINE
+                    </h3>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="images/cityscape.png" alt=""/>
+                    <h3>
+                        PASS TO THE CITY
+                    </h3>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="images/dining-meal-covered.png" alt=""/>
+                    <h3>
+                        FINE DINING
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <p class="base">&copy; 2020 &bull; Boston City &bull; Phone 1-800-555-1234 &bull; Login</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
