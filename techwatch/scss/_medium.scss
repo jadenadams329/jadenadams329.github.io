@@ -1,0 +1,38 @@
+div#page{
+    grid-template-areas: 
+    "header header"
+    "navigation content"
+    "footer footer";
+    grid-template-columns: 150px auto;
+}
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    
+    a.myjump{
+        display: none;
+    }
+    nav{
+        height: auto;
+    }
+
+
+/*----------- MAIN --------------*/
+div.photo{
+    flex-basis: 55%;
+}
+div.contents{
+    flex-basis: 45%;
+}
+
+
+/*----------- FOOTER --------------*/
+    
