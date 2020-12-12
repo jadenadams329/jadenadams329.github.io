@@ -1,0 +1,52 @@
+
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+   
+
+
+/*----------- MAIN --------------*/
+div#weatherforecast{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div.card{
+        flex-basis: 28%;
+        margin: 1rem 2%;
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        div.container{
+            text-align: center;
+            margin-top: 2%;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        
+    }
+    div.card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+
+    
+    
+}
+
+
+/*----------- FOOTER --------------*/
+    
