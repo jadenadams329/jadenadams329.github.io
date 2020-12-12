@@ -73,7 +73,10 @@ main {
 }
 
 div#myCards{
+    display: flex;
+    flex-wrap: wrap;
     div.card{
+        flex-basis: 100%;
         background-color: lightgray;
         margin-bottom: 25px;
         color: white;

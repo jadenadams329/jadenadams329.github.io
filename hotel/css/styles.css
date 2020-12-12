@@ -380,32 +380,36 @@ main {
   padding: 0 2%;
   min-height: 10rem; }
 
-div#myCards div.card {
-  background-color: lightgray;
-  margin-bottom: 25px;
-  color: white; }
-div#myCards figure {
-  margin: 0;
-  width: 100%;
-  position: relative; }
-  div#myCards figure img {
-    width: 100%; }
-  div#myCards figure figcaption {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    padding: .5rem 2vw; }
-div#myCards div.container {
-  margin: 0;
+div#myCards {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  div#myCards div.container ion-icon {
-    margin: 16px 0; }
-  div#myCards div.container p {
-    padding-left: 2%;
-    padding-right: 2%; }
+  flex-wrap: wrap; }
+  div#myCards div.card {
+    flex-basis: 100%;
+    background-color: lightgray;
+    margin-bottom: 25px;
+    color: white; }
+  div#myCards figure {
+    margin: 0;
+    width: 100%;
+    position: relative; }
+    div#myCards figure img {
+      width: 100%; }
+    div#myCards figure figcaption {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      padding: .5rem 2vw; }
+  div#myCards div.container {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    div#myCards div.container ion-icon {
+      margin: 16px 0; }
+    div#myCards div.container p {
+      padding-left: 2%;
+      padding-right: 2%; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -439,6 +443,9 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  div#myCards div.card {
+    flex-basis: 48%;
+    margin: 1% 1% 1% 1%; }
   div#myCards figure {
     margin: 0;
     width: 100%;

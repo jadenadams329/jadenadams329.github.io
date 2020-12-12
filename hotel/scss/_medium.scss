@@ -19,6 +19,10 @@
 
 /*----------- MAIN --------------*/
 div#myCards{
+    div.card{
+        flex-basis: 48%;
+        margin: 1% 1% 1% 1%;
+    }
     figure{
         margin: 0;
         width: 100%;
