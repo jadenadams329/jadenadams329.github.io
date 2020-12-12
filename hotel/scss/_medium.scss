@@ -18,7 +18,37 @@
 
 
 /*----------- MAIN --------------*/
+div#myCards{
+    figure{
+        margin: 0;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        figcaption{
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, .5);
+            width: 100%;
+            padding: .5rem 2vw;
+        }
+    }
+    div.container{
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
+        ion-icon{
+            margin: 16px 0;
+        }
+        p{
+            
+
+        }
+    }
+}
 
 
 /*----------- FOOTER --------------*/
