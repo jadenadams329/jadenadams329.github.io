@@ -453,73 +453,19 @@ main h1{
   margin-left: 1rem;
 }
 
-  div.cards{
-    display: flex;
-    flex-wrap: wrap;
-  }
- 
-  .card {
-    margin: auto;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 500px;
-    flex-basis: 92%;
-    border-radius: 3px;
-    border: 1px solid #B0BDB3;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
-    transition: all 0.25s ease-in-out;
-  }
-  .card .card-content {
-    margin-bottom: 30px;
-    padding: 30px;
-    box-sizing: border-box;
-    transition: all 0.25s ease-in-out;
-  }
-  .card .card-content h3 {
-    text-align: left;
-    color: #0A1857;
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 10px;
-    line-height: 44px;
-  }
-  .card .card-content p {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 14;
-    line-height: 24px;
-  }
-  .card .card-content .link {
-    text-decoration: underline;
-    color: #8C746C;
-    font-weight: bold;
-  }
-  .card .action {
-    color: #0A1857;
-    font-weight: bold;
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #B0BDB3;
-    background: rgba(10, 24, 87, 0.5);
-    margin-top: auto;
-    transition: all 0.25s ease-in-out;
-  }
-  .card .action:hover {
-    color: white;
-    background: #0A1857;
-  }
-  .card:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
+section.thegallery figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  margin: 0;
+}
+figure img.lazy {
+  width: 100%;
+  height: auto;
+
+}
+
   
-  
-
-
-
-
 .footerWrapper {
   background-color: #0A1857; }
 
@@ -572,9 +518,6 @@ footer p {
   nav ul li a:hover {
     background-color: #0A1857;
     color: white; }
-    .card{
-      flex-basis: 45%;
-    }
 
  }
 /* end of media query */
@@ -585,9 +528,6 @@ footer p {
 
   nav ul li a {
     padding: .6rem 1rem; }
-  .card{
-    flex-basis: 31%;;
-  }
 
 }
 /* end of media query */
