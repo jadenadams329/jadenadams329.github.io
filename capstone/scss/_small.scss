@@ -1,0 +1,175 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- HEADER --------------*/
+.headerWrapper{
+    background-color: #0A1857;
+}
+header {
+    padding: .5rem 2%;
+    background-color: #0A1857;
+    font-family: 'Roboto Slab', serif;
+}
+header figure{
+    margin: 0 2% 0 0;
+}
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    color: #0A1857;
+    font-size: 1.6rem;
+
+}
+nav {
+    font-family: 'Roboto Slab', serif;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+nav ul.hide{
+    display: none;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(255,255,255,0.4)
+}
+
+nav ul li.active a{
+    background-color: #0A1857;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: #0A1857;
+    color: white;
+}
+main.home {
+    padding: 0;
+    min-height: 10rem;
+    
+}
+div.my_slider{
+    position: relative;
+    width: 100%;
+
+}
+img.slider{
+    max-width: 100%;
+    height: auto;
+}
+.covidCard {
+	background-color: #fff;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	padding: 15px;
+	width: 85%;
+	min-height: 130px;
+	margin: auto;
+    transition: all 0.5s ease;
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: left;
+    }
+}
+
+.covidCard:hover {
+	box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+		1px 6px 12px rgba(39, 44, 49, 0.04);
+	transform: translate3D(0, -1px, 0) scale(1.02);
+	transition: all 0.5s ease;
+}
+h1.technician{
+    text-align: center;
+    margin-bottom: 5px;
+}
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 75%;
+    margin: 1rem auto;
+    text-align: center;
+    flex-basis: 75%;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    padding: 0 .5rem;
+  }
+  
+  .card button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+.footerWrapper{
+    background-color: #0A1857;
+}
+footer {
+    background-color: #0A1857;
+    padding: .5rem 2%;
+    text-align: center;
+}
+.fab, fa-facebook-square{
+    color: white;
+
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

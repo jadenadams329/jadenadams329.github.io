@@ -1,0 +1,39 @@
+nav {
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 2%;
+}
+    nav button{
+        display: none;
+    }
+    nav ul{
+        margin-left: 2%;
+    }
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        border:none;
+        border-right: 1px solid white;
+        padding: .8rem 1rem
+    }
+    nav ul li.active a{
+        border-bottom: 5px solid #0A1857;
+        background-color: white;
+        color: #0A1857;
+    }
+    nav ul li a:hover{
+        background-color: #0A1857;
+        color: white;
+    }
+.card{
+    flex-basis: 34%;
+
+}
+
+    
+
+
